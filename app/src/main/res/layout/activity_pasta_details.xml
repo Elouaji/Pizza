@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90FFC107"
+    android:orientation="vertical"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    tools:context=".PastaDetailsActivity">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/photo"
+        android:layout_width="131dp"
+        android:layout_height="105dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="11dp"
+
+
+        android:src="@mipmap/pasta1" />
+
+    <TextView
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Pasta"
+        android:fontFamily="@font/helo_font"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Description"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desc" />
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

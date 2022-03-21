@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CB1E2128"
+    android:paddingBottom="20dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp">
+
+        <ImageView
+            android:id="@id/imageView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:alpha="0.3"
+            android:src="@drawable/bg"
+            app:tint="#77000000" />
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="331dp"
+            android:layout_height="113dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="-7dp"
+            android:layout_marginRight="3dp"
+            android:layout_marginBottom="3dp"
+            android:background="#05EAB414"
+            android:src="@drawable/bg" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/photo"
+            android:layout_width="131dp"
+            android:layout_height="105dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="-2dp"
+            android:layout_marginTop="11dp"
+
+
+            android:src="@mipmap/pasta1" />
+
+        <TextView
+            android:id="@+id/nom"
+            android:layout_width="205dp"
+            android:layout_height="64dp"
+            android:layout_alignTop="@+id/photo"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/helo_font"
+            android:text="pasta 1"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/quantite"
+            android:layout_width="131dp"
+            android:layout_height="31dp"
+            android:layout_alignStart="@+id/nom"
+            android:layout_alignBottom="@+id/photo"
+            android:layout_marginStart="-7dp"
+            android:layout_marginBottom="-10dp"
+            android:text="100 plats"
+            android:fontFamily="@font/helo_font"
+            android:textSize="12dp"/>
+        android:textColor="@color/black"
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="1dp"
+            app:srcCompat="@android:drawable/ic_menu_view" />
+
+        <TextView
+            android:id="@+id/idf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/quantite"
+            android:layout_alignStart="@+id/nom"
+            android:text="TextView"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>
